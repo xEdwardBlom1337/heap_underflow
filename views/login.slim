@@ -1,0 +1,13 @@
+- if flash[:errors]
+    - for e in flash[:errors]
+        p class="error" =e
+- if !@current_user
+    form action="login" method="post"
+        label for="username" Username: 
+        input id="username" type="text" name="username" placeholder="Username" value="julle"
+        label for="password" Password: 
+        input id="password" type="password" name="password" placeholder="Password" value="ab123"
+        div
+            button type="submit" Log in
+- else
+    p ALREADY LOGED IN

@@ -1,0 +1,20 @@
+doctype html
+html
+    head
+        link rel="stylesheet" type="text/css" href="/css/style.css"
+        title Heap Underflow
+    body
+        header
+            a id="banner" href="/"
+                h1 Heap Underflow
+            a href="/questions" Questions
+            - if @current_user
+                a href="/question" Ask question
+                p = "Logged in as " + @current_user.username
+                form action="logout" method="post"
+                    div
+                        button type="submit" Log out
+            - else
+                a href="/login" Log in
+                a href="/signup" Sign up
+        == yield

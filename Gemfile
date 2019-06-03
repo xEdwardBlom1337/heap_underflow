@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+
+gem 'sinatra'
+gem 'slim'
+gem 'sqlite3'
+gem 'rerun'
+gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
+gem 'racksh'
+gem 'byebug'
+gem 'rack-flash3'

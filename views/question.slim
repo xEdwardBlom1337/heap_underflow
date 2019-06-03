@@ -1,0 +1,15 @@
+- if @current_user
+    - if flash[:errors]
+        - for e in flash[:errors]
+            p class="error" =e
+    form action="question" method="post"
+        label for="title" Title: 
+        input id="title" type="text" name="title" placeholder="Title of question? " value="Y u do dis?"
+        label for="content" Content: 
+        textarea id="content" type="text" name="content" cols="30" rows="10" maxlength="500"
+        laber for="tags" Tags: 
+        input id="tags" type="text" name="tags"
+        div
+            button type="submit" Submit
+- else
+    p PLEASE LOG IN

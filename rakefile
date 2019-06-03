@@ -1,0 +1,10 @@
+require 'bundler'
+Bundler.require
+
+task :run do
+    sh 'bundle exec rerun -b --ignore "*.{slim,js,css}" "rackup --host 0.0.0.0"'
+end
+
+task :debug do
+    sh 'rackup'
+end

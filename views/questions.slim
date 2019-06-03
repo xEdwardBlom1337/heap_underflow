@@ -1,0 +1,9 @@
+- for q in @questions
+    div class="question"
+        a href="/questions/#{q.id}"
+            h4 = q.title
+            h5 = q.user.username
+            - for tag in q.tags
+                h6 = tag.name
+            p = q.content
+            p = "Votes: #{q.votes}"

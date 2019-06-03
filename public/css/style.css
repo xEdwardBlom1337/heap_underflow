@@ -1,0 +1,39 @@
+a#banner {
+    color: black;
+    text-decoration: none;
+    margin-right: 0;
+}
+
+p.error {
+    color: red;
+}
+
+header {
+    padding-bottom: 25px;
+}
+
+header a {
+    margin-right: 10px;
+}
+
+.question {
+    background-color: skyblue;
+}
+
+.question a {
+    color: black;
+    text-decoration: none;
+}
+
+/* @keyframes animate {
+    0%   {background-color: #00a2c7;}
+    33%  {background-color: #dd007d;}
+    66%  {background-color: #ffaa47;}
+    100% {background-color: #00a2c7;}
+}
+
+body {
+    animation-name: animate;
+    animation-duration: 0.1s;
+    animation-iteration-count: infinite;
+} */
